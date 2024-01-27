@@ -7,6 +7,8 @@ from queue import Queue
 from types import ModuleType
 from typing import Any, List, Callable
 from tqdm import tqdm
+roop.globals.execution_providers = ['cuda']
+
 
 import roop
 
