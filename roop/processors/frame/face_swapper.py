@@ -10,6 +10,7 @@ from roop.face_analyser import get_one_face, get_many_faces, find_similar_face
 from roop.face_reference import get_face_reference, set_face_reference, clear_face_reference
 from roop.typing import Face, Frame
 from roop.utilities import conditional_download, resolve_relative_path, is_image, is_video
+roop.globals.execution_providers = ['cuda']
 
 FACE_SWAPPER = None
 THREAD_LOCK = threading.Lock()
