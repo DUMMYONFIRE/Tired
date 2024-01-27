@@ -22,7 +22,7 @@ def get_face_swapper() -> Any:
     with THREAD_LOCK:
         if FACE_SWAPPER is None:
             model_path = resolve_relative_path('../models/inswapper_128.onnx')
-            FACE_SWAPPER = insightface.model_zoo.get_model(model_path, providers=tensorrt)
+            FACE_SWAPPER = insightface.model_zoo.get_model(model_path, providers=cuda)
     return FACE_SWAPPER
 
 
